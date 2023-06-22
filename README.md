@@ -4,7 +4,7 @@ Themes/Fonts/Configs that I use.
 # **Linux**
 
 ## **Shell** 
-> ![nightlyte-kush](https://github.com/nightlyte-dev/dotfiles/assets/131328638/1aec003d-341c-43a3-974e-4f2fdbb69f79)
+> ![nightlyte-kush](images/nightlyte-kush.png)
 > ### Zsh
 >  * Oh My Zsh
 >    - *Plugins*: `copypath git sudo zsh-autosuggestions zsh-syntax-highlighting`
@@ -19,7 +19,7 @@ Themes/Fonts/Configs that I use.
 
 ## **Themes**
 ### *KDE Plasma*
-> ![nightlyte-desktop](https://github.com/nightlyte-dev/dotfiles/assets/131328638/5ae5ab53-c6be-43b0-aefe-f4c09c51d0f2)
+> ![nightlyte-desktop](images/nightlyte-desktop.png)
 > ### ***Theme*** 
 > * LayanDark (Enabled w/ Kvantum Manager)
 >
