@@ -34,7 +34,7 @@ Themes/Fonts/Configs that I use.
 
 
 
-# Helpful Commands
+<!-- # Helpful Commands
 <details>
   <summary> 
     <b> Installing multiple fonts zips at once </b>
@@ -68,7 +68,7 @@ Themes/Fonts/Configs that I use.
   sudo apt-get install dconf-editor
   ```
 
-</details>
+</details> -->
 
 
 
