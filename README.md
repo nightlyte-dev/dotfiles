@@ -1,6 +1,8 @@
 # ***Nightlyte dotfiles*** 
 Themes/Fonts/Configs that I use.
 
+Install all links in README, then clone/copy files to your home directory.
+
 # **Linux**
 
 ## **Shell** 
