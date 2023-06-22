@@ -99,5 +99,5 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-eval "$(oh-my-posh init zsh --config ~/github/nightlyte-themes/oh-my-posh/themes/night-kushal.omp.json)"
+eval "$(oh-my-posh init zsh --config $HOME/oh-my-posh/themes/nightlyte-kush.omp.json)"
 #eval "$(starship init zsh)"
