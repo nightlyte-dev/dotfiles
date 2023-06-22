@@ -5,10 +5,10 @@ Themes/Fonts/Configs that I use.
 
 ## **Shell** 
 > ![nightlyte-kush](images/nightlyte-kush.png)
-> ### Zsh
->  * Oh My Zsh
+> ### [Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
+>  * [Oh My Zsh](https://ohmyz.sh/)
 >    - *Plugins*: `copypath git sudo zsh-autosuggestions zsh-syntax-highlighting`
->  * Oh My Posh
+>  * [Oh My Posh](https://ohmyposh.dev/)
 >    - *Theme*: `nightlyte-kush.omp.json`
 >  * Font
 >    - Mononoki Nerd Font
@@ -21,16 +21,16 @@ Themes/Fonts/Configs that I use.
 ### *KDE Plasma*
 > ![nightlyte-desktop](images/nightlyte-desktop.png)
 > ### ***Theme*** 
-> * LayanDark (Enabled w/ Kvantum Manager)
+> * [LayanDark](https://github.com/vinceliuice/Layan-gtk-theme) (Enabled w/ Kvantum Manager)
 >
 > ### ***Icons***
-> * Tela Blue Dark
+> * [Tela Blue Dark](https://github.com/vinceliuice/Tela-icon-theme)
 >
 > ### ***Cursors***
-> * Bibata Modern Classic
+> * [Bibata Modern Classic](https://www.gnome-look.org/p/1914825)
 >
 > ### ***SDDM Login Theme***
-> * Sugar Candy
+> * [Sugar Candy](https://store.kde.org/p/1312658/)
 
 
 
