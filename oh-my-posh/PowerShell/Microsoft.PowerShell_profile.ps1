@@ -1,0 +1,1 @@
+oh-my-posh init pwsh --config 'C:\Users\Reid\Documents\GitHub\nightlyte-themes\oh-my-posh\themes\night-kushal.omp.json' | Invoke-Expression
