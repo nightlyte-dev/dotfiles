@@ -14,8 +14,7 @@ Install all links in README, then clone/copy files to your home directory.
 >    - *Theme*: `nightlyte-kush.omp.json`
 >  * Font
 >    - Mononoki Nerd Font
->      - 14pt
->    - Apple Color Emojis
+>      - 16pt
 
 
 

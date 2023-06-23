@@ -157,7 +157,7 @@
           "background": "#cecece",
           "leading_diamond": "\ue0b2",
           "trailing_diamond": "\ue0b0",
-          "template": "\u231b  {{ .FormattedMs }} ",
+          "template": "\uf253  {{ .FormattedMs }} ",
           "properties": {
             "style": "austin",
             "threshold": 150
