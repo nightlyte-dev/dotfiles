@@ -21,6 +21,8 @@ Install all links in README, then clone/copy files to your home directory.
 ## **Themes**
 ### *KDE Plasma*
 > ![nightlyte-desktop](images/nightlyte-desktop.png)
+>
+> ![nightlyte-desktop](images/nightlyte-desktop-showcase.png)
 > ### ***Theme*** 
 > * [LayanDark](https://github.com/vinceliuice/Layan-gtk-theme) (Enabled w/ Kvantum Manager)
 >
