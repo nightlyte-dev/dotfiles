@@ -35,7 +35,7 @@
           "foreground": "#D6DEEB",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
-          "template": " \uf32f {{ .Name }} ",
+          "template": " \uebca {{ .Name }} ",
           "type": "shell"
         },
         {
