@@ -95,9 +95,28 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+### Aliases ###
+#   cd Aliases 
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias -- -="cd -"
+
+#   Main Aliases
+alias la="lsd -A --group-directories-first"
+alias ld="lsd -d *"
+alias cdl="cd $1 && la"
+alias rm="rm -i"
+alias uu="sudo pacman -Syu"
+alias vim="nvim"
+
+#   Rickroll
+alias rr="curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash"
+
+
+
+
 eval "$(oh-my-posh init zsh --config $HOME/oh-my-posh/themes/nightlyte-kush.omp.json)"
 #eval "$(starship init zsh)"
