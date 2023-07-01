@@ -39,7 +39,7 @@
           "type": "shell"
         },
         {
-          "background": "#5827ba",
+          "background": "#282a36",
           "foreground": "#D6DEEB",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
@@ -162,18 +162,6 @@
             "style": "austin",
             "threshold": 150
           }
-        },
-        {
-          "type": "time",
-          "style": "diamond",
-          "foreground": "#4b4b4b",
-          "background": "#cecece",
-          "leading_diamond": "\ue0b2",
-          "trailing_diamond": "\ue0b0",
-          "template": "\uf43a  {{ .CurrentDate | date .Format }} ",
-          "properties": {
-            "time_format": "15:04:05"
-          }
         }
       ]
     },
@@ -190,7 +178,7 @@
         {
           "foreground": "#F2D3B6",
           "properties": {
-            "time_format": "<#D6DEEB>\ue641 15:04:05</> <#79DFE1>|</> \uf073 2 Jan, Monday"
+            "time_format": "<#D6DEEB>\ue641 3:04:05 PM</> <#79DFE1>|</> \uf073 2 Jan, Monday"
           },
           "style": "plain",
           "template": "{{ .CurrentDate | date .Format }} <#79DFE1>|</>",
