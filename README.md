@@ -1,7 +1,30 @@
-# ***Nightlyte dotfiles*** 
-Themes/Fonts/Configs that I use.
+# ***Nightlyte🌙 dotfiles*** 
+My custom themes/dotfiles :)
+<br></br>
 
-Install all links in README, then clone/copy files to your home directory.
+# **Wallpaper**
+## **Nightlyte Blobs🫧** - [***Available now on the Wallpaper Engine Steam Workshop!***](https://steamcommunity.com/sharedfiles/filedetails/?id=2996073544 "Nightlyte Blobs - Steam Workshop Page")
+> <h3><i>Details:</i></h3>
+> 
+>> <u>Mood</u> 
+>> - [x] *Relaxing 💤*
+>>
+>> <u>Aesthetic</u> 
+>> - [x] *Pleasing ✨*
+>>
+>> <u>Blobs</u>
+>> - [x] *Blobbing 🫧*
+>
+> [**Subscribe, Favorite, and Share!**](https://steamcommunity.com/sharedfiles/filedetails/?id=2996073544 "Nightlyte Blobs - Steam Workshop Page") <br><small> [- Get Wallpaper Engine](https://store.steampowered.com/app/431960/Wallpaper_Engine/ "Wallpaper Engine Steam Page") (if you don't have it)</small></br>
+>
+> <i>Nightlyte</i>🌙
+>
+> ![nightlyte-blobs](images/nightlyte-blobs.gif)
+## **PNG File 🗎**
+> ### [nightlyte-blobs.png](images/nightlyte-blobs.png)
+> ![nightlyte-blobs](images/nightlyte-blobs.png)
+<!-- >> <img src=images/nightlyte-blobs.gif width="750" height="750"> -->
+
 
 # **Linux**
 
