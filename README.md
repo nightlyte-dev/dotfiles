@@ -6,9 +6,9 @@ My custom themes/dotfiles :)
 ## **Nightlyte Blobs🫧** - [***Available now on the Wallpaper Engine Steam Workshop!***](https://steamcommunity.com/sharedfiles/filedetails/?id=2996073544 "Nightlyte Blobs - Steam Workshop Page")
 <img src=images/nightlyte-blobs.gif width="750" height="750">
 
-[**Subscribe, Favorite, and Share!**](https://steamcommunity.com/sharedfiles/filedetails/?id=2996073544 "Nightlyte Blobs - Steam Workshop Page") <br><sub> [Get Wallpaper Engine](https://store.steampowered.com/app/431960/Wallpaper_Engine/ "Wallpaper Engine Steam Page") (if you don't have it)</sub></br>
+[**Subscribe, Favorite, and Share!**](https://steamcommunity.com/sharedfiles/filedetails/?id=2996073544 "Nightlyte Blobs - Steam Workshop Page")
+<br><sub> [- Get Wallpaper Engine](https://store.steampowered.com/app/431960/Wallpaper_Engine/ "Wallpaper Engine Steam Page") (if you don't have it)</sub></br>
 
-> *- Nightlyte*🌙
 
 *Details:*
 
@@ -22,6 +22,8 @@ My custom themes/dotfiles :)
 ‎ ‎ <ins>Blobs</ins>
 - [x] *Blobbing* *🫧*
 <br></br>
+
+>*Nightlyte*🌙
 
 ## **PNG File 🗎**
 > ### [nightlyte-blobs.png](images/nightlyte-blobs.png)
