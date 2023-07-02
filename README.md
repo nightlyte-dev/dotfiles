@@ -19,10 +19,10 @@ My custom themes/dotfiles :)
 
 [**Subscribe, Favorite, and Share!**](https://steamcommunity.com/sharedfiles/filedetails/?id=2996073544 "Nightlyte Blobs - Steam Workshop Page") <br><sub> [- Get Wallpaper Engine](https://store.steampowered.com/app/431960/Wallpaper_Engine/ "Wallpaper Engine Steam Page") (if you don't have it)</sub></br>
 
-> *Nightlyte*🌙
-
 
 <img src=images/nightlyte-blobs.gif width="750" height="750">
+
+> *- Nightlyte*🌙
 
 ## **PNG File 🗎**
 > ### [nightlyte-blobs.png](images/nightlyte-blobs.png)
