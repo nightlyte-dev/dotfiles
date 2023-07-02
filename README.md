@@ -4,22 +4,26 @@ My custom themes/dotfiles :)
 
 # **Wallpaper**
 ## **Nightlyte Blobs🫧** - [***Available now on the Wallpaper Engine Steam Workshop!***](https://steamcommunity.com/sharedfiles/filedetails/?id=2996073544 "Nightlyte Blobs - Steam Workshop Page")
-> <h3><i>Details:</i></h3>
-> 
->> <u>Mood</u> 
->> - [x] *Relaxing 💤*
->>
->> <u>Aesthetic</u> 
->> - [x] *Pleasing ✨*
->>
->> <u>Blobs</u>
->> - [x] *Blobbing 🫧*
->
-> [**Subscribe, Favorite, and Share!**](https://steamcommunity.com/sharedfiles/filedetails/?id=2996073544 "Nightlyte Blobs - Steam Workshop Page") <br><small> [- Get Wallpaper Engine](https://store.steampowered.com/app/431960/Wallpaper_Engine/ "Wallpaper Engine Steam Page") (if you don't have it)</small></br>
->
-> <i>Nightlyte</i>🌙
->
-> ![nightlyte-blobs](images/nightlyte-blobs.gif)
+### *Details:*
+
+
+‎ ‎ <ins>Mood</ins>
+- [x] *Relaxing* 💤
+
+‎ ‎ <ins>Aesthetic</ins> 
+- [x] *Pleasing* ✨
+
+‎ ‎ <u>Blobs</u>
+- [x] *Blobbing* *🫧*
+<br></br>
+
+[**Subscribe, Favorite, and Share!**](https://steamcommunity.com/sharedfiles/filedetails/?id=2996073544 "Nightlyte Blobs - Steam Workshop Page") <br><small> [Get Wallpaper Engine](https://store.steampowered.com/app/431960/Wallpaper_Engine/ "Wallpaper Engine Steam Page") (if you don't have it)</small></br>
+
+> *- Nightlyte*🌙
+
+
+<img src=images/nightlyte-blobs.gif width="750" height="750">
+
 ## **PNG File 🗎**
 > ### [nightlyte-blobs.png](images/nightlyte-blobs.png)
 > ![nightlyte-blobs](images/nightlyte-blobs.png)
@@ -29,34 +33,36 @@ My custom themes/dotfiles :)
 # **Linux**
 
 ## **Shell** 
-> ![nightlyte-kush](images/nightlyte-kush.png)
-> ### [Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
->  * [Oh My Zsh](https://ohmyz.sh/)
->    - *Plugins*: `copypath git sudo zsh-autosuggestions zsh-syntax-highlighting`
->  * [Oh My Posh](https://ohmyposh.dev/)
->    - *Theme*: `nightlyte-kush.omp.json`
->  * Font
->    - Mononoki Nerd Font
->      - 16pt
+![nightlyte-kush](images/nightlyte-kush.png)
+### [Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
+  * [Oh My Zsh](https://ohmyz.sh/)
+    - *Plugins*: `copypath git sudo zsh-autosuggestions zsh-syntax-highlighting`
+  * [Oh My Posh](https://ohmyposh.dev/)
+    - *Theme*: `nightlyte-kush.omp.json`
+  * Font
+    - Mononoki Nerd Font
+      - 16pt
 
 
 
 ## **Themes**
 ### *KDE Plasma*
-> ![nightlyte-desktop](images/nightlyte-desktop.png)
->
-> ![nightlyte-desktop](images/nightlyte-desktop-showcase.png)
-> ### ***Theme*** 
-> * [LayanDark](https://github.com/vinceliuice/Layan-gtk-theme) (Enabled w/ Kvantum Manager)
->
-> ### ***Icons***
-> * [Tela Blue Dark](https://github.com/vinceliuice/Tela-icon-theme)
->
-> ### ***Cursors***
-> * [Bibata Modern Classic](https://www.gnome-look.org/p/1914825)
->
-> ### ***SDDM Login Theme***
-> * [Sugar Candy](https://store.kde.org/p/1312658/)
+![nightlyte-desktop](images/nightlyte-desktop.png)
+
+![nightlyte-desktop](images/nightlyte-desktop-showcase.png)
+### ***Theme*** 
+* [LayanDark](https://github.com/vinceliuice/Layan-gtk-theme) (Enabled w/ Kvantum Manager)
+
+### ***Icons***
+ * [Tela Blue Dark](https://github.com/vinceliuice/Tela-icon-theme)
+
+### ***Cursors***
+ * [Bibata Modern Classic](https://www.gnome-look.org/p/1914825)
+
+### ***SDDM Login Theme***
+ * [Sugar Candy](https://store.kde.org/p/1312658/)
+
+
 
 
 
