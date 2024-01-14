@@ -1,5 +1,5 @@
 #   Install essentials and add Microsoft to source list for VScode
-sudo apt install build-essential procps curl wget file git gpg zsh vim neovim
+sudo apt install build-essential procps curl wget file git gpg zsh vim
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
 sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
 sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
@@ -19,6 +19,10 @@ sudo chsh -s $(which zsh)
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 sed -i "s|plugins=(git)|plugins=(git copypath sudo zsh-autosuggestions zsh-syntax-highlighting)|g" .zshrc
+
+#   Powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+sed -i 's|ZSH_THEME="robbyrussell"|ZSH_THEME="powerlevel10k/powerlevel10k"|g' .zshrc
 
 #   Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -66,9 +70,11 @@ alias -- -="cd -"
 alias la="lsd -A --group-directories-first"
 alias ld="lsd -d *"
 alias cdl="cd $1 && la"
-alias rm="rm -i"
-alias uu="sudo pacman -Syu"
+alias uu="apt update %% apt upgrade"
 alias vim="nvim"
 
 #   Rickroll
 alias rr="curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash"
+
+#   Show available terminal colors
+curl -s https://gist.githubusercontent.com/HaleTom/89ffe32783f89f403bba96bd7bcd1263/raw/e50a28ec54188d2413518788de6c6367ffcea4f7/print256colours.sh | bash
