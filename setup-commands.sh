@@ -67,10 +67,11 @@ alias .....="cd ../../../.."
 alias -- -="cd -"
 
 #   Main Aliases
-alias la="lsd -A --group-directories-first"
-alias ld="lsd -d *"
+alias la="exa --all --icons --grid --sort=ext"
+alias ld="exa -D --icons --grid"
+alias ls="exa --icons --grid --sort=ext"
 alias cdl="cd $1 && la"
-alias uu="apt update %% apt upgrade"
+# alias uu="apt update %% apt upgrade"
 alias vim="nvim"
 
 #   Rickroll
