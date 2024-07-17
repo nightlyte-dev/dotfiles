@@ -1,5 +1,5 @@
 
-sudo pacman -S base-devel git ripgrep zsh exa vim neovim wl-clipboard bitwarden
+sudo pacman -S base-devel git ripgrep zsh exa vim neovim wl-clipboard bitwarden docker docker-compose
 
 #   Install yay
 git clone https://aur.archlinux.org/yay.git
@@ -51,7 +51,12 @@ brew install gcc
 
 
 #   Docker
-
+sudo systemctl start docker.service
+sudo systemctl enable docker.service
+sudo usermod -aG docker $USER
+newgrp docker
+docker ps       #test command
+docker run hello-world
 
 ### Aliases ###
 #   cd Aliases 
