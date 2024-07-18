@@ -72,6 +72,7 @@ alias ls="exa --icons --grid --sort=type"
 alias cdl="cd $1 && la"
 # alias uu="apt update %% apt upgrade"
 alias vim="nvim"
+alias fetch="fastfetch"
 
 #   Rickroll
 alias rr="curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash"
