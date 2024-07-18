@@ -1,5 +1,5 @@
-// Load with --load-config examples/2.jsonc
-// Note that you must replace the image path to an existing image to display it.
+// Nightlyte's fastfetch Arch Config
+// Based on example config from fastfetch/presets/examples/7.jsonc
 
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
@@ -106,7 +106,7 @@
       "key": "├󰑭",
       "keyColor": "green"
     },
-    {
+    /*     {
       "type": "swap",
       "key": "├󰓡",
       "keyColor": "green"
@@ -115,7 +115,7 @@
       "type": "uptime",
       "key": "├󰅐",
       "keyColor": "green"
-    },
+    }, */
     {
       "type": "display",
       "key": "└󰍹",
