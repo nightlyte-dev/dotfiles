@@ -66,9 +66,9 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
 #   Main Aliases
-alias la="exa --all --icons --grid --sort=type"
-alias ld="exa -D --icons --grid"
-alias ls="exa --icons --grid --sort=type"
+alias ls="eza --icons --grid --sort=type"
+alias la="eza --all --icons --grid --sort=type"
+alias ld="eza -D --icons --grid"
 alias cdl="cd $1 && la"
 # alias uu="apt update %% apt upgrade"
 alias vim="nvim"
