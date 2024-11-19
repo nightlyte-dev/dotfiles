@@ -2,7 +2,7 @@
 
 #   Install essentials
 sudo apt update && sudo apt upgrade -y
-sudo apt install git build-essential procps curl wget ninja-build gettext cmake unzip neofetch zsh
+sudo apt install git build-essential procps curl wget ninja-build gettext cmake unzip fastfetch zsh
 curl -LO https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep_13.0.0_amd64.deb
 sudo dpkg -i ripgrep_13.0.0_amd64.deb
 
