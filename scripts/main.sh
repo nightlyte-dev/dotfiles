@@ -76,7 +76,7 @@ else
   gum style --foreground 141 'yay is already installed'
 fi
 
-PACKAGE_LIST=("System Utilities" "Dev Tools" "Media" "Office" "Fonts" "Flatpaks" "Services")
+PACKAGE_LIST=("System Utilities" "Dev Tools" "Media" "Office" "Fonts" "Flatpaks" "Services" "Dotfiles")
 
 PACKAGE_CHOICE=$(gum choose --header "Please select which packages to install:" --no-limit "${PACKAGE_LIST[@]}")
 
@@ -130,6 +130,11 @@ while IFS= read -r line; do
           echo "$service is already enabled"
         fi
       done
+      ;;
+    
+    "Dotfiles")
+      echo "Installing dotfiles..."
+      . dotfiles-setup.sh
       ;;
 
   esac
