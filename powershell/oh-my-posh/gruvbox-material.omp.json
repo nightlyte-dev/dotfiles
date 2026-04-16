@@ -1,0 +1,87 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "palette": {
+        "bg_dim": "#1b1b1b",
+        "bg0": "#282828",
+        "bg1": "#32302f",
+        "bg2": "#32302f",
+        "bg3": "#45403d",
+        "bg4": "#45403d",
+        "bg5": "#5a524c",
+        "bg_diff_red": "#402120",
+        "bg_diff_green": "#33381b",
+        "bg_diff_blue": "#0e363e",
+        "bg_visual_red": "#4c3432",
+        "bg_visual_green": "#3b4439",
+        "bg_visual_blue": "#374141",
+        "bg_visual_yellow": "#4f422e",
+        "bg_visual_purple": "#443840",
+        "fg0": "#d4be98",
+        "fg1": "#ddc7a1",
+        "red": "#ea6962",
+        "green": "#a9b665",
+        "blue": "#7daea3",
+        "orange": "#e78a4e",
+        "yellow": "#d8a657",
+        "aqua": "#89b482",
+        "purple": "#d3869b"
+  },
+  "console_title_template": "{{if .Root}}[root] {{end}}{{.Shell}} in <{{.Folder}}>",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "p:yellow",
+          "style": "plain",
+          "template": " ╭─<p:red>(</> {{ if .WSL }}<p:blue></><p:green> </>{{end}}<p:blue>{{.Icon}} </> ",
+          "type": "os"
+        },
+        {
+          "foreground": "p:fg0",
+          "style": "plain",
+          "template": "{{ if .SSHSession }}<p:green> </>{{ end }}{{ .UserName }}<p:orange>@</>{{ .HostName }} ",
+          "type": "session"
+        },
+        {
+          "foreground": "p:aqua",
+          "options": {
+            "folder_icon": "󱃪 ",
+            "folder_separator_icon": " / ",
+            "home_icon": "󱃪 ",
+            "style": "agnoster_short"
+          },
+          "style": "plain",
+          "type": "path"
+        },
+        {
+          "foreground": "p:aqua",
+          "options": {
+            "branch_icon": "\ue725 ",
+            "cherry_pick_icon": "\ue29b ",
+            "commit_icon": "\uf417 ",
+            "fetch_status": false,
+            "fetch_upstream_icon": false,
+            "merge_icon": "\ue727 ",
+            "no_commits_icon": "\uf0c3 ",
+            "rebase_icon": "\ue728 ",
+            "revert_icon": "\uf0e2 ",
+            "tag_icon": "\uf412 "
+          },
+          "template": "{{ .HEAD }} ",
+          "style": "plain",
+          "type": "git"
+        },
+        {
+          "style": "plain",
+          "foreground": "p:closer",
+          "template": "\uf105",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "final_space": true,
+  "version": 4
+}
