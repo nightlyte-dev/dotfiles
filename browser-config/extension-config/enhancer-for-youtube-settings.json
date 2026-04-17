@@ -1,0 +1,127 @@
+{
+  "version": "2.0.132",
+  "settings": {
+    "blur": 0,
+    "brightness": 100,
+    "contrast": 100,
+    "grayscale": 0,
+    "huerotate": 0,
+    "invert": 0,
+    "saturate": 100,
+    "sepia": 0,
+    "applyvideofilters": false,
+    "backgroundcolor": "#000000",
+    "backgroundopacity": 85,
+    "blackbars": false,
+    "blockautoplay": true,
+    "blockhfrformats": false,
+    "blockwebmformats": false,
+    "boostvolume": false,
+    "cinemamode": false,
+    "cinemamodewideplayer": false,
+    "controlbar": {
+      "active": false,
+      "autohide": false,
+      "centered": true,
+      "position": "absolute"
+    },
+    "controls": [
+      "volume-booster",
+      "size",
+      "speed-minus",
+      "speed",
+      "speed-plus",
+      "options"
+    ],
+    "controlsvisible": false,
+    "controlspeed": true,
+    "controlspeedmousebutton": false,
+    "controlvolume": true,
+    "controlvolumemousebutton": false,
+    "convertshorts": true,
+    "customcolors": {
+      "--main-color": "#e96962",
+      "--main-background": "#282828",
+      "--second-background": "#32302f",
+      "--hover-background": "#45403d",
+      "--main-text": "#d4be98",
+      "--dimmer-text": "#d4be98",
+      "--shadow": "#1b1b1b"
+    },
+    "customcssrules": "",
+    "customscript": "",
+    "customtheme": false,
+    "darktheme": false,
+    "date": 1776095056957,
+    "defaultvolume": false,
+    "disableautoplay": false,
+    "executescript": false,
+    "expanddescription": false,
+    "filter": "none",
+    "griditemsperrow": {
+      "channel": {
+        "shorts": {
+          "apply": false,
+          "count": 5
+        },
+        "videos": {
+          "apply": false,
+          "count": 4
+        }
+      },
+      "posts": {
+        "apply": false,
+        "count": 4
+      },
+      "shorts": {
+        "apply": false,
+        "count": 8
+      },
+      "videos": {
+        "apply": true,
+        "count": 5
+      }
+    },
+    "hidecardsendscreens": false,
+    "hidechat": false,
+    "hidecomments": false,
+    "hiderelated": false,
+    "hideshorts": false,
+    "ignoreplaylists": true,
+    "ignorepopupplayer": true,
+    "localecode": "en_US",
+    "localedir": "ltr",
+    "message": false,
+    "miniplayer": true,
+    "miniplayerposition": "_bottom-right",
+    "miniplayersize": "_800x450",
+    "newestcomments": false,
+    "overridespeeds": true,
+    "pauseforegroundtab": false,
+    "pausevideos": false,
+    "qualityembeds": "highres",
+    "qualityembedsfullscreen": "hd1080",
+    "qualityplaylists": "highres",
+    "qualityplaylistsfullscreen": "hd1080",
+    "qualityvideos": "highres",
+    "qualityvideosfullscreen": "hd1080",
+    "reload": false,
+    "reversemousewheeldirection": false,
+    "selectquality": true,
+    "selectqualityfullscreenoff": false,
+    "selectqualityfullscreenon": false,
+    "speed": 1,
+    "speedvariation": 0.02,
+    "stopvideos": false,
+    "theatermode": false,
+    "theme": "youtube-deep-dark-custom",
+    "themevariant": "youtube-deep-dark.css",
+    "update": 1776095056957,
+    "volume": 50,
+    "volumemultiplier": 2,
+    "volumevariation": 2,
+    "whatsnew": false,
+    "wideplayer": false,
+    "wideplayerviewport": false
+  }
+}

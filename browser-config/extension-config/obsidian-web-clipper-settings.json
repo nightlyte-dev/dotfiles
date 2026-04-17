@@ -1,0 +1,145 @@
+{
+  "migrationVersion": 1,
+  "template_17762052048620tfc7phjz": {
+    "id": "17762052048620tfc7phjz",
+    "name": "Default",
+    "behavior": "create",
+    "noteNameFormat": "{{title}}",
+    "path": "Clippings",
+    "noteContentFormat": "{{content}}",
+    "context": "",
+    "properties": [
+      {
+        "id": "1776205204862h9621fc25",
+        "name": "title",
+        "value": "{{title}}"
+      },
+      {
+        "id": "1776205204862c8j8shut5",
+        "name": "source",
+        "value": "{{url}}"
+      },
+      {
+        "id": "1776205204862skrixbut2",
+        "name": "author",
+        "value": "{{author|split:\", \"|wikilink|join}}"
+      },
+      {
+        "id": "1776205204862pg51fzk01",
+        "name": "published",
+        "value": "{{published}}"
+      },
+      {
+        "id": "17762052048625o5z5dxeh",
+        "name": "created",
+        "value": "{{date}}"
+      },
+      {
+        "id": "17762052048621aase70ny",
+        "name": "description",
+        "value": "{{description}}"
+      },
+      {
+        "id": "1776205204862b5zndw850",
+        "name": "tags",
+        "value": "clippings"
+      }
+    ],
+    "triggers": []
+  },
+  "template_1776447850362uam0kstix": {
+    "id": "1776447850362uam0kstix",
+    "name": "Add URL",
+    "behavior": "prepend-specific",
+    "noteNameFormat": "Reset",
+    "path": "",
+    "noteContentFormat": "{{title}}\n- {{url}}",
+    "properties": [],
+    "triggers": [],
+    "context": ""
+  },
+  "reader_settings": {
+    "fontSize": 16,
+    "lineHeight": 1.6,
+    "maxWidth": 38,
+    "lightTheme": "gruvbox",
+    "darkTheme": "same",
+    "appearance": "dark",
+    "fonts": [
+      "VictorMono Nerd Font Propo"
+    ],
+    "defaultFont": "VictorMono Nerd Font Propo",
+    "blendImages": true,
+    "colorLinks": true,
+    "customCss": ""
+  },
+  "vaults": [],
+  "template_list": [
+    "1776447850362uam0kstix",
+    "17762052048620tfc7phjz"
+  ],
+  "highlighter_settings": {
+    "highlighterEnabled": true,
+    "alwaysShowHighlights": true,
+    "highlightBehavior": "highlight-inline"
+  },
+  "interpreter_settings": {
+    "interpreterModel": "",
+    "models": [],
+    "providers": [],
+    "interpreterEnabled": false,
+    "interpreterAutoRun": false,
+    "defaultPromptContext": ""
+  },
+  "property_types": [
+    {
+      "name": "title",
+      "type": "text",
+      "defaultValue": "{{title}}"
+    },
+    {
+      "name": "source",
+      "type": "text",
+      "defaultValue": "{{url}}"
+    },
+    {
+      "name": "author",
+      "type": "multitext",
+      "defaultValue": "{{author|split:\", \"|wikilink|join}}"
+    },
+    {
+      "name": "published",
+      "type": "date",
+      "defaultValue": "{{published}}"
+    },
+    {
+      "name": "created",
+      "type": "date",
+      "defaultValue": "{{date}}"
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "defaultValue": "{{description}}"
+    },
+    {
+      "name": "tags",
+      "type": "multitext",
+      "defaultValue": "clippings"
+    }
+  ],
+  "general_settings": {
+    "showMoreActionsButton": false,
+    "betaFeatures": false,
+    "legacyMode": true,
+    "silentOpen": false,
+    "openBehavior": "popup",
+    "saveBehavior": "addToObsidian"
+  },
+  "stats": {
+    "addToObsidian": 4,
+    "saveFile": 0,
+    "copyToClipboard": 0,
+    "share": 0
+  }
+}
