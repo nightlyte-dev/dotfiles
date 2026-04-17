@@ -53,3 +53,5 @@ function Invoke-Starship-TransientFunction {
 Invoke-Expression (&starship init powershell)
 
 Enable-TransientPrompt
+
+Invoke-Expression (& { (zoxide init powershell --cmd cd | Out-String) })
