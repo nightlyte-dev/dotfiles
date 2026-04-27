@@ -1,0 +1,7 @@
+[[plugin.deps]]
+use = "macydnah/office"
+rev = "41ebef8"
+hash = "1d856e7731bd5b3c5ed56112f36b256c"
+
+[flavor]
+deps = []
