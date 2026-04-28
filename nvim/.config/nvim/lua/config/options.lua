@@ -1,11 +1,12 @@
 -- Options are automatically loaded before lazy.nvim startup
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
-vim.o.shell = "pwsh.exe"
-vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.clipboard = "unnamedplus"
-vim.opt.shiftwidth = 2
-vim.opt.tabstop = 2
+-- vim.o.shell = "pwsh.exe"
+vim.o.number = true
+vim.o.relativenumber = true
+vim.o.clipboard = "unnamedplus"
+vim.o.shiftwidth = 2
+vim.o.tabstop = 2
 vim.o.softtabstop = 2
 vim.g.autoformat = true
+vim.o.wrap = true
