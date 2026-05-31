@@ -1,0 +1,166 @@
+[
+  {
+    "name": "Main",
+    "padding": 0,
+    "gridSize": 10,
+    "zones": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 100
+      }
+    ]
+  },
+  {
+    "name": "Split",
+    "padding": 0,
+    "gridSize": 10,
+    "zones": [
+      {
+        "x": 50,
+        "y": 0,
+        "width": 50,
+        "height": 100
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 100
+      }
+    ]
+  },
+  {
+    "name": "Split 2",
+    "padding": 0,
+    "gridSize": 10,
+    "zones": [
+      {
+        "x": 50,
+        "y": 0,
+        "width": 50,
+        "height": 100
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 100
+      }
+    ]
+  },
+  {
+    "name": "70/30",
+    "padding": 0,
+    "gridSize": 10,
+    "zones": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 70,
+        "height": 100
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "width": 30,
+        "height": 100
+      }
+    ]
+  },
+  {
+    "name": "30/70",
+    "padding": 0,
+    "gridSize": 10,
+    "zones": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 30,
+        "height": 100
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "width": 70,
+        "height": 100
+      }
+    ]
+  },
+  {
+    "name": "1b2s",
+    "padding": 0,
+    "gridSize": 10,
+    "zones": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 100
+      },
+      {
+        "x": 50,
+        "y": 0,
+        "width": 50,
+        "height": 50
+      },
+      {
+        "x": 50,
+        "y": 50,
+        "width": 50,
+        "height": 50
+      }
+    ]
+  },
+  {
+    "name": "3 Columns",
+    "padding": 0,
+    "gridSize": 10,
+    "zones": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 33.3,
+        "height": 100
+      },
+      {
+        "x": 33.3,
+        "y": 0,
+        "width": 33.4,
+        "height": 100
+      },
+      {
+        "x": 66.7,
+        "y": 0,
+        "width": 33.3,
+        "height": 100
+      }
+    ]
+  },
+  {
+    "name": "3 Columns (Priority)",
+    "padding": 0,
+    "gridSize": 10,
+    "zones": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 30,
+        "height": 100
+      },
+      {
+        "x": 30,
+        "y": 0,
+        "width": 40,
+        "height": 100
+      },
+      {
+        "x": 70,
+        "y": 0,
+        "width": 30,
+        "height": 100
+      }
+    ]
+  }
+]
