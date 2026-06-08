@@ -18,7 +18,7 @@
 ; Reloading and Exiting the script }}}
 
 ; Toggle Taskbar (only works on main monitor) {{{
-#F1::WinSetTransparent 255, "ahk_class Shell_TrayWnd"   ; Win+F1 to show taskbar 
+#F3::WinSetTransparent 255, "ahk_class Shell_TrayWnd"   ; Win+F1 to show taskbar 
 #F2::WinSetTransparent 0, "ahk_class Shell_TrayWnd"     ; Win+F2 to hide taskbar
 
 #HotIf !WinExist("ahk_class TopLevelWindowForOverflowXamlIsland")   ; Usually I like to have the taskbar hidden.
