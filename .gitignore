@@ -1,3 +1,4 @@
 scripts/test.sh
 scripts/testsource.sh
-/nvim/.config/nvim/lazy-lock.json
+nvim/.config/nvim/lazy-lock.json
+mpv/.config/mpv/mpvClipboard.log
