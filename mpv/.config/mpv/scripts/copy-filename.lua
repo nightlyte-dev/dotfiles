@@ -74,12 +74,12 @@ local function copy_filename(arg)
 	end
 end
 
-mp.add_key_binding("y", "copy-filename-basename", function()
+mp.add_key_binding("Ctrl+z", "copy-filename-basename", function()
 	copy_filename({ filename_format = "basename" })
 end)
 mp.add_key_binding("Ctrl+Alt+z", "copy-filename-relative-path", function()
 	copy_filename({ filename_format = "relative_path" })
 end)
-mp.add_key_binding("Y", "copy-filename-absolute-path", function()
+mp.add_key_binding("Ctrl+Z", "copy-filename-absolute-path", function()
 	copy_filename({ filename_format = "absolute_path" })
 end)

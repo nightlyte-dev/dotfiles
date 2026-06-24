@@ -4,14 +4,7 @@
 -- LEFT seeks back N seconds; if that would cross 0, jump to previous playlist entry
 -- and seek from the end by the remaining amount.
 
-local opts = {
-	step = 1.0,
-}
-local options = require("mp.options")
-
-options.read_options(opts, nil, function() end)
-
--- local step = 1.0 -- seconds per press (match your LEFT behavior)
+local step = 1.0 -- seconds per press (match your LEFT behavior)
 local pending_from_end = nil
 
 local function smart_seek_back()
@@ -20,16 +13,16 @@ local function smart_seek_back()
 
 	-- If time-pos is unknown (streams), just do normal seek.
 	if pos == nil then
-		mp.commandv("seek", opts.step, "relative")
+		mp.commandv("seek", -step, "relative")
 		return
 	end
 
-	if pos < opts.step and plpos > 0 then
-		pending_from_end = opts.step - pos
+	if pos < step and plpos > 0 then
+		pending_from_end = step - pos
 		-- Go to previous playlist entry (weak = do nothing if already first)
 		mp.commandv("playlist-prev", "weak")
 	else
-		mp.commandv("seek", opts.step, "relative")
+		mp.commandv("seek", -step, "relative")
 	end
 end
 
@@ -47,7 +40,12 @@ mp.register_event("file-loaded", function()
 end)
 
 -- Override LEFT. Change "LEFT" to something else if you don’t want to replace it. You may need to comment out your original LEFT binding in input.conf.
-mp.add_key_binding("Ctrl+WHEEL_DOWN", "smart_seek_back_playlist", smart_seek_back, { repeatable = true })
+mp.add_key_binding("Ctrl+WHEEL_DOWN", "smart_seek_back_playlist", smart_seek_back, { repeatable = true, step = 1.0 })
+mp.add_key_binding(
+	"Meta+WHEEL_DOWN",
+	"smart_seek_back_playlist_long",
+	smart_seek_back,
+	{ repeatable = true, step = 5.0 }
+)
 
 -- mp.add_key_binding("Meta+WHEEL_DOWN", "smart_seek_back_playlist", smart_seek_back, { repeatable = true, step = 6.0 })
-mp.add_key_binding("LEFT", "smart_seek_back_playlist", smart_seek_back, { repeatable = true })
