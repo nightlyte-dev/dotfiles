@@ -1,0 +1,101 @@
+{
+  "manifest_version": 2,
+  "name": "Gruvbox Material Dark",
+  "description": "Gruvbox Material Dark color scheme for Chromium Browsers",
+  "version": "1.0",
+  "author": "Nightlyte (nightlyte.io)",
+  "theme": {
+    "colors": {
+      "frame": [
+        40,
+        40,
+        40
+      ],
+      "frame_inactive": [
+        40,
+        40,
+        40
+      ],
+      "frame_incognito": [
+        40,
+        40,
+        40
+      ],
+      "frame_incognito_inactive": [
+        40,
+        40,
+        40
+      ],
+      "background_tab": [
+        40,
+        40,
+        40
+      ],
+      "background_tab_inactive": [
+        40,
+        40,
+        40
+      ],
+      "background_tab_incognito": [
+        40,
+        40,
+        40
+      ],
+      "background_tab_incognito_inactive": [
+        40,
+        40,
+        40
+      ],
+      "bookmark_text": [
+        212,
+        190,
+        152
+      ],
+      "tab_background_text": [
+        212,
+        190,
+        152
+      ],
+      "tab_background_text_inactive": [
+        161,
+        144,
+        115
+      ],
+      "tab_background_text_incognito": [
+        212,
+        190,
+        152
+      ],
+      "tab_background_text_incognito_inactive": [
+        161,
+        144,
+        115
+      ],
+      "tab_text": [
+        221,
+        199,
+        161
+      ],
+      "toolbar": [
+        50,
+        48,
+        47
+      ],
+      "toolbar_button_icon": [
+        234,
+        105,
+        98
+      ],
+      "omnibox_text": [
+        212,
+        190,
+        152
+      ],
+      "omnibox_background": [
+        40,
+        40,
+        40
+      ]
+    }
+  }
+}

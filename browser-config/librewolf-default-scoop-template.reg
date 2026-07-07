@@ -1,0 +1,39 @@
+﻿Windows Registry Editor Version 5.00
+
+
+[HKEY_CURRENT_USER\SOFTWARE\RegisteredApplications]
+"Firefox (Scoop)"="Software\\Clients\\StartMenuInternet\\Firefox (Scoop)\\Capabilities"
+
+[HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\Firefox (Scoop)\shell\open\command]
+""="\"C:\\Users\\_USERNAME_\\scoop\\shims\\firefox.exe\""
+
+[HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\Firefox (Scoop)\DefaultIcon]
+""="C:\\Users\\_USERNAME_\\scoop\\apps\\firefox\\current\\firefox.exe,0"
+
+[HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\Firefox (Scoop)\Capabilities\FileAssociations]
+".html"="ScoopFirefoxHTM"
+".htm"="ScoopFirefoxHTM"
+
+[HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\Firefox (Scoop)\Capabilities\URLAssociations]
+"https"="ScoopFirefoxHTM"
+"http"="ScoopFirefoxHTM"
+
+[HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\Firefox (Scoop)\Capabilities]
+"ApplicationName"="Firefox (Scoop)"
+"ApplicationIcon"="C:\\Users\\_USERNAME_\\scoop\\apps\\firefox\\current\\firefox.exe,0"
+"ApplicationDescription"="Firefox"
+
+[HKEY_CURRENT_USER\SOFTWARE\Clients\StartMenuInternet\Firefox (Scoop)]
+""="Firefox (Scoop)"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\ScoopFirefoxHTM\shell\open\command]
+""="\"C:\\Users\\_USERNAME_\\scoop\\shims\\firefox.exe\" %1"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\ScoopFirefoxHTM\Application]
+; Name in Dialog
+"ApplicationName"="Firefox (Scoop)"
+"ApplicationDescription"="It's Firefox."
+"ApplicationIcon"="C:\\Users\\_USERNAME_\\scoop\\apps\\firefox\\current\\firefox.exe,0"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\ScoopFirefoxHTM]
+""="Firefox (Scoop) HTML Document"

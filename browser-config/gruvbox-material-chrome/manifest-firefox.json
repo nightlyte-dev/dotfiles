@@ -1,0 +1,43 @@
+{
+  "manifest_version": 2,
+  "version": "1.1",
+  "name": "Gruvbox Material Dark",
+  "theme": {
+    "colors": {
+      "toolbar": "rgb(32, 32, 32)",
+      "toolbar_text": "rgb(168, 153, 132)",
+      "frame": "rgb(32, 32, 32)",
+      "tab_background_text": "rgb(168, 153, 132)",
+      "toolbar_field": "rgb(23, 24, 25)",
+      "toolbar_field_text": "rgb(212, 190, 152)",
+      "tab_line": "rgb(234, 105, 98)",
+      "popup": "rgb(23, 24, 25)",
+      "popup_text": "rgb(168, 153, 132)",
+      "button_background_active": "rgba(231, 138, 78, 0.7)",
+      "button_background_hover": "rgba(231, 138, 78, 0.3)",
+      "frame_inactive": "rgb(23, 24, 25)",
+      "icons_attention": "rgb(234, 105, 98)",
+      "icons": "rgb(172, 159, 150)",
+      "ntp_background": "rgb(32, 32, 32)",
+      "ntp_text": "rgb(212, 190, 152)",
+      "popup_border": "rgb(98, 89, 72)",
+      "popup_highlight_text": "rgb(30, 30, 30)",
+      "popup_highlight": "rgba(125, 174, 163, 0.8)",
+      "sidebar_border": "rgb(98, 89, 72)",
+      "sidebar_text": "rgb(168, 153, 132)",
+      "sidebar": "rgb(32, 32, 32)",
+      "tab_background_separator": "rgb(124, 111, 100)",
+      "tab_loading": "rgb(137, 180, 130)",
+      "tab_selected": "rgb(55, 51, 49)",
+      "tab_text": "rgb(212, 190, 152)",
+      "toolbar_bottom_separator": "rgba(81, 73, 69, 0.4)",
+      "toolbar_field_border_focus": "rgba(125, 174, 163, 0.7)",
+      "toolbar_field_border": "rgba(104, 91, 71, 0.1)",
+      "toolbar_field_highlight_text": "rgb(212, 190, 152)",
+      "toolbar_field_highlight": "rgb(59, 78, 75)",
+      "toolbar_field_separator": "rgb(81, 73, 69)",
+      "toolbar_top_separator": "rgba(124, 111, 100, 0.3)",
+      "toolbar_vertical_separator": "rgb(211, 134, 155)"
+    }
+  }
+}
