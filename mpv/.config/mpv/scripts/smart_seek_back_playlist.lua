@@ -13,7 +13,7 @@ local function smart_seek_back()
 
 	-- If time-pos is unknown (streams), just do normal seek.
 	if pos == nil then
-		mp.commandv("seek", -step, "relative")
+		mp.commandv("seek", -step, "exact")
 		return
 	end
 
@@ -22,7 +22,7 @@ local function smart_seek_back()
 		-- Go to previous playlist entry (weak = do nothing if already first)
 		mp.commandv("playlist-prev", "weak")
 	else
-		mp.commandv("seek", -step, "relative")
+		mp.commandv("seek", -step, "exact")
 	end
 end
 
