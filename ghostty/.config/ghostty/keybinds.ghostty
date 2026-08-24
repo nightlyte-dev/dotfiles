@@ -1,0 +1,4 @@
+keybind = ctrl+insert=copy_to_clipboard
+keybind = shift+insert=paste_from_clipboard
+keybind = alt+right=next_tab
+keybind = alt+left=previous_tab
