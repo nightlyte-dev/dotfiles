@@ -13,11 +13,21 @@ With some exceptions, every file in this repo should be treated as *ephemeral* a
 ## Other Projects
 
 **⚠️In Development⚠️**
+
 [f0rge](https://github.com/nightlyte-dev/f0rge.git) —  An (Upgraded) Arch Linux System Crafting Tool
+```
+    ░████   ░████                                  
+   ░██     ░██ ░██                                 
+░████████ ░██ ░████ ░██░████  ░████████  ░███████  
+   ░██    ░██░██░██ ░███     ░██    ░██ ░██    ░██ 
+   ░██    ░████ ░██ ░██      ░██    ░██ ░█████████ 
+   ░██     ░██ ░██  ░██      ░██   ░███ ░██        
+   ░██      ░████   ░██       ░█████░██  ░███████  
+                                    ░██            
+                              ░███████             
+```
 
 # How it's organized
-
-Not every folder here is created equal, so here's a quick map:
 
 ## The `stow`-able stuff
 
@@ -63,7 +73,7 @@ stow fish ghostty mpv nvim starship yazi hyprland
 **Not Actively Using/Discontinued:**
 - zshrc
 
-### The "everything else" stuff
+## The "everything else" stuff
 
 The rest of the folders reference material and system-level config files that either live outside `$HOME` or that need to be copied/applied by hand:
 
@@ -85,4 +95,4 @@ The rest of the folders reference material and system-level config files that ei
 
 ## Theme
 
-[***Gruvbox Material***](https://github.com/sainnhe/gruvbox-material) - The best color palette ever created (he says, having previously saying the exact same thing about [Dracula](https://github.com/dracula/dracula-theme) and [Cattpuccin Mocha](https://github.com/catppuccin/catppuccin))
+[***Gruvbox Material***](https://github.com/sainnhe/gruvbox-material) - The best color palette ever created (I say, having previously saying the exact same thing about [Dracula](https://github.com/dracula/dracula-theme) and [Cattpuccin Mocha](https://github.com/catppuccin/catppuccin))
