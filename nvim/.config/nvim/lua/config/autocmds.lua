@@ -6,3 +6,21 @@
 --
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
+
+-- Genius workaround to fix yank to system clipboard over SSH connection
+if vim.env.SSH_TTY then
+  local function paste()
+    return vim.split(vim.fn.getreg(""), "\n")
+  end
+  vim.g.clipboard = {
+    name = "OSC 52",
+    copy = {
+      ["+"] = require("vim.ui.clipboard.osc52").copy("+"),
+      ["*"] = require("vim.ui.clipboard.osc52").copy("*"),
+    },
+    paste = {
+      ["+"] = paste,
+      ["*"] = paste,
+    },
+  }
+end
