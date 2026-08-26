@@ -17,7 +17,7 @@ end
 # Set Neovim as manpager
 set -e MANPAGER
 set -gx MANPAGER 'nvim +Man!'
-
+set -gx EDITOR nvim
 # Vi Mode
 fish_vi_key_bindings
 

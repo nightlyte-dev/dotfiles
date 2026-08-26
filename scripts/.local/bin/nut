@@ -1,0 +1,155 @@
+#!/usr/bin/env bash
+# nut ("new cut") - trim a video with ffmpeg, painlessly.
+set -euo pipefail
+
+PROG="nut"
+
+# ---- defaults -----------------------------------------------------------
+copy=0          # 1 = stream copy instead of re-encode
+accurate=0      # 1 = accurate/slow seek (-ss after -i) instead of fast seek
+dry_run=0
+force=0
+crf=18
+output=""
+
+# ---- helpers --------------------------------------------------------------
+if [[ -t 1 ]]; then
+  bold=$'\e[1m'; dim=$'\e[2m'; red=$'\e[31m'; green=$'\e[32m'; reset=$'\e[0m'
+else
+  bold=""; dim=""; red=""; green=""; reset=""
+fi
+
+die() { echo "${red}${PROG}: $*${reset}" >&2; exit 1; }
+info() { echo "${dim}${PROG}:${reset} $*" >&2; }
+
+# convert HH:MM:SS[.ms] / MM:SS / SS(.ms) into plain seconds
+to_seconds() {
+  awk -v t="$1" 'BEGIN {
+    n = split(t, a, ":");
+    s = 0;
+    for (i = 1; i <= n; i++) s = s * 60 + a[i];
+    print s;
+  }'
+}
+
+usage() {
+  cat <<EOF
+${bold}${PROG}${reset} - trim a video with ffmpeg, painlessly
+
+${bold}USAGE${reset}
+  $PROG [options] <input> <start> <end> [output]
+
+${bold}ARGS${reset}
+  input    path to the source video
+  start    clip start (HH:MM:SS[.ms] or seconds), e.g. 00:01:30 or 90
+  end      clip end, same format as start
+           prefix with '+' to give a duration instead of an end time,
+           e.g. +30 means "30 seconds after start"
+  output   destination file (optional; defaults to "<input>.cut.<ext>")
+
+${bold}OPTIONS${reset}
+  -o, --output FILE   output filename (overrides positional output)
+  -c, --copy          stream copy instead of re-encoding (fast, but the
+                       cut may snap to the nearest keyframe)
+  -q, --crf N         libx264 quality, lower = better (default: $crf)
+  -a, --accurate      accurate but slower seek (decodes from the start of
+                       the file instead of jumping near the cut point)
+  -n, --dry-run       print the ffmpeg command instead of running it
+  -f, --force         overwrite the output file without asking
+  -h, --help          show this help
+
+${bold}EXAMPLES${reset}
+  $PROG movie.mp4 00:01:00 00:02:30
+  $PROG movie.mp4 90 +45 highlight.mp4
+  $PROG -c movie.mkv 1:00:00 1:05:00        # fast, no re-encode
+EOF
+}
+
+# ---- parse options ----------------------------------------------------
+args=()
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    -o|--output) output="${2:?--output needs a value}"; shift 2 ;;
+    -c|--copy) copy=1; shift ;;
+    -q|--crf) crf="${2:?--crf needs a value}"; shift 2 ;;
+    -a|--accurate) accurate=1; shift ;;
+    -n|--dry-run) dry_run=1; shift ;;
+    -f|--force) force=1; shift ;;
+    -h|--help) usage; exit 0 ;;
+    --) shift; args+=("$@"); break ;;
+    -*) die "unknown option: $1 (see --help)" ;;
+    *) args+=("$1"); shift ;;
+  esac
+done
+set -- "${args[@]}"
+
+[[ $# -ge 3 ]] || { usage; exit 1; }
+
+input="$1"
+start="$2"
+end="$3"
+[[ $# -ge 4 ]] && output="${output:-$4}"
+
+command -v ffmpeg >/dev/null 2>&1 || die "ffmpeg not found on PATH"
+[[ -f "$input" ]] || die "input file not found: $input"
+
+# figure out the clip duration. we always drive ffmpeg with -t (a plain
+# duration) rather than -to: -to's meaning shifts depending on whether -ss
+# is placed before or after -i (offset from the seek vs. absolute from the
+# file start), which silently gives the wrong clip length. -t means the
+# same thing in both cases.
+if [[ "$end" == +* ]]; then
+  duration=$(to_seconds "${end#+}")
+else
+  start_s=$(to_seconds "$start")
+  end_s=$(to_seconds "$end")
+  duration=$(awk -v a="$start_s" -v b="$end_s" 'BEGIN { printf "%.3f", b - a }')
+fi
+awk -v d="$duration" 'BEGIN { exit !(d > 0) }' || die "end must be after start"
+
+# default output name: keep the extension, tag it as a cut
+if [[ -z "$output" ]]; then
+  ext="${input##*.}"
+  base="${input%.*}"
+  if [[ "$ext" == "$input" ]]; then
+    output="${input}.cut"
+  else
+    output="${base}.cut.${ext}"
+  fi
+fi
+
+if [[ -e "$output" && "$force" -ne 1 && "$dry_run" -ne 1 ]]; then
+  die "output already exists: $output (use -f/--force to overwrite)"
+fi
+
+# build the ffmpeg command
+cmd=(ffmpeg -hide_banner -loglevel warning -stats)
+[[ "$force" -eq 1 ]] && cmd+=(-y)
+
+if [[ "$accurate" -eq 1 ]]; then
+  # slow but frame-accurate: seek after decoding from the start
+  cmd+=(-i "$input" -ss "$start" -t "$duration")
+else
+  # fast: seek before decoding (input option)
+  cmd+=(-ss "$start" -i "$input" -t "$duration")
+fi
+
+if [[ "$copy" -eq 1 ]]; then
+  cmd+=(-c copy)
+else
+  cmd+=(-c:v libx264 -crf "$crf" -c:a aac)
+fi
+
+cmd+=("$output")
+
+if [[ "$dry_run" -eq 1 ]]; then
+  printf '%q ' "${cmd[@]}"; echo
+  exit 0
+fi
+
+info "cutting ${bold}${start}${reset}${dim} for ${reset}${bold}${duration}s${reset}"
+info "$(printf '%q ' "${cmd[@]}")"
+
+"${cmd[@]}"
+
+echo "${green}${PROG}:${reset} wrote $output"

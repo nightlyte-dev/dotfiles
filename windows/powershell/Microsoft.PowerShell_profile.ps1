@@ -1,16 +1,3 @@
-# OLD PROFILE STUFF
-############################
-# oh-my-posh init pwsh --config "C:\Users\rgilliam\github\dotfiles-archive\oh-my-posh\themes\nightlyte-kush-v2.omp.json" | Invoke-Expression
-# oh-my-posh init pwsh --config "C:\Users\rgilliam\github\dotfiles\powershell\oh-my-posh\gruvbox-material.omp.json" | Invoke-Expression
-# oh-my-posh enable reload
-# Import-Module -Name Terminal-Icons
-# Adds icons to PowerShell's version of `ls`
-# function iconls {
-#     Get-ChildItem | Format-Wide
-# }
-# Set-Alias ls iconls
-############################
-
 # eza aliases
 function ezals {
     eza -la --icons --color=always --group-directories-first
