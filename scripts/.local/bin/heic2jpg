@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Sets the nocaseglob shell option
+shopt -s nocaseglob
+# Runs the for loop
+for f in *.{HEIC,heic}; do
+  g=${f%.*}
+  heif-convert -q 100 "$f" "$g.jpg"
+done
+# Unsets the option
+shopt -u nocaseglob
